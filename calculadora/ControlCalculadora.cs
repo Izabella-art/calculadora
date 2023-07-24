@@ -30,16 +30,23 @@ namespace calculadora
         public int Menu()
         {
             Console.WriteLine("-------------Menu-----------" +
-                             "\n0. Sair" +
-                             "\n1. Somar" +
-                             "\n2. Subtrair" +
-                             "\n3. Dividir" +
-                             "\n4. Multiplicar" +
-                             "\n4. Potencia" +
-                             "\n5. Raiz do Primeiro Numero" +
-                             "\n6. Tabuada do primeiro numero" +
-                             "\n7. Tabuada do segundo numero" +
-                             "\n\nEscolha uma das opções acima: ");
+                              "\n0. Sair" +
+                              "\n1. Somar" +
+                              "\n2. Subtrair" +
+                              "\n3. Dividir" +
+                              "\n4. Multiplicar" +
+                              "\n5. Potencia" +
+                              "\n6. Raiz" +
+                              "\n7. Tabuada" +
+                              "\n8. Conversão de binário para decimal" +
+                              "\n9. Conversão de decimal para binário" +
+                              "\n10. Hexadecimal para decimal " +
+                              "\n11. Decimal para Hexadecimal" +
+                              "\n12. Bhaskara" +
+                              "\n13. Binario para hexadecimal" +
+                              "\n14. Dobro e Triplo" +
+                              "\n16. Positivo ou negativo e par ou impar" +
+                              "\n\nEscolha uma das opções acima: ");
 
             int opcao = Convert.ToInt32(Console.ReadLine());
             return opcao;
@@ -107,17 +114,56 @@ namespace calculadora
                         Console.WriteLine(this.calculadora.TabuadaNum2());
                         break;
 
+                    case 9:
+                        Console.WriteLine("Informe um valor em decimal: ");
+                        Console.WriteLine(this.calculadora.ConverterBinario(Convert.ToInt32(Console.ReadLine())));
+                        break;
+
+                    case 10:
+                        Console.WriteLine("Informe um valor em Hexadecimal: ");
+                        Console.WriteLine(this.calculadora.ConverterHexaDecimal(Console.ReadLine()));
+                        break;
+
+                    case 11:
+                        Console.WriteLine("Informe um valor em Decimal: ");
+                        Console.WriteLine(this.calculadora.ConverterDecimalHexa(Convert.ToInt32(Console.ReadLine())));
+                        break;
+
+                    case 12:
+                        Console.WriteLine("Informe A: ");
+                        double a = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("Informe B: ");
+                        double b = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("Informe C: ");
+                        double c = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine(this.calculadora.bhaskara(a, b, c));
+                        break;
+
+                    default:
+                        Console.WriteLine("Opção escolhida não é valida");
+                        break;
+
+                    case 13:
+                        Console.WriteLine("Informe um valor binario")
+                            string binario = Console.ReadLine();
+                        Console.WriteLine(this.calculadora.ConverterBinarioHexadecimal(binario));
+                        break;
+
+                    case 14:
+                        Console.WriteLine("Informe um numero")
+                            string DobroTriplo = Console.ReadLine();
+                        Console.WriteLine(this.calculadora.MultiplicarDobroTriplo(Convert.ToInt32(Console.ReadLine())));
+                        break;
                     default:
                         Console.WriteLine("opção escolhida não é valida");
                         break;
-
-
                 }//fim do switch
-            } while (opcao != 0);//fim do whilw
 
-        }//fim da classe
-         //control void e model return
-         //reforça que a calculadora que esta em cima é a variavel
-         //quanto mais metodoa melhor
-    }
+            } while (opcao != 0);//fim do Do...while
+        }//fim do operacao
+    }//fim do switch
+                    //control void e model return
+                     //reforça que a calculadora que esta em cima é a variavel
+                     //quanto mais metodoa melhor
+    
 }//fim do projeto
