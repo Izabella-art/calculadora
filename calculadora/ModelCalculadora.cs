@@ -25,8 +25,8 @@ namespace calculadora
         //get set
         public double GetSetNum1
         {
-                get {return this.num1; }
-                set {this.num1 = value; }
+            get { return this.num1; }
+            set { this.num1 = value; }
         }//fim do get set num 1
         public double GetSetNum2
         {
@@ -39,7 +39,7 @@ namespace calculadora
         {
             return GetSetNum1 + GetSetNum2;
         }//fim do metodo somar
-        
+
         //metodo subtrair
         public double Subtrair()
         {
@@ -81,10 +81,10 @@ namespace calculadora
         public string TabuadaNum1()
         {
             string resultado = "";
-            for (int i = 0;i <=10; i++) 
+            for (int i = 0; i <= 10; i++)
             {
                 resultado += "\n" + GetSetNum1 + " * " + i + " = " + (GetSetNum1 * i);
-            
+
             }//fim do for
 
             return resultado;
@@ -230,7 +230,7 @@ namespace calculadora
             }
         }//fim do bhaskara
 
-        public string ConverterBinarioHexadecimal (string binario)
+        public string ConverterBinarioHexadecimal(string binario)
         {
             int dec = ConverterDecimal(binario);
             string hex = ConverterDecimalHexa(dec);
@@ -240,40 +240,41 @@ namespace calculadora
 
 
         }//fim do metodo
-        
+
 
         //////////////////////Exercicios//////////////////////
 
-        public string MultiplicarDobroTriplo (double num)
+        //exercicio 1
+
+        public string MultiplicarDobroTriplo(double num)
         {
-            string DobroTriplo = "O dobro é: " (num * 2) " \n O triplo é: " (num * 3);
+            string DobroTriplo = "O dobro é: "(num * 2) " \n O triplo é: "(num * 3);
 
             return DobroTriplo;
         }//fim do metodo
         //underscorepegar um numero e multilplicar por dois e por tres
 
 
+        // exercicio 2
 
+        public double Salario(string salarioAtual)
+        {
+            string caract = "";
+            int num1 = 0;
+            SalarioNovo = 0;
+            string SalarioAtual((num1* 30 / )100)
+                double SalarioNovo(num1 +SalarioAtual)
+                return SalarioNovo;
 
-        public string Salario (double num1)
-        {   
-            
-            string SalarioAtual ((num1 * 100 / )30)
-            
         }
+        //descobrir quanto é 30 por cento do salario e somar esse valor com o salario atual
 
-
-
-
-
-
-
-
+        //exercicio 3
         public string ParOuImpar(int num1, int num2)
         {
             int ParImpar = (num1 % 2);
-            
-            if(ParImpar = 0 )
+
+            if (ParImpar = 0)
             {
                 return "o numero é par" + PositivoNegativo;
             }
@@ -281,8 +282,8 @@ namespace calculadora
             {
                 return "o numero é impar" + PositivoNegativo;
             }
-            
-            int PositivoNegativo ()
+
+            int PositivoNegativo()
             if (num1 < 0)
             {
                 return "o numero é negativo" + ParImpar;
@@ -291,16 +292,130 @@ namespace calculadora
             {
                 return "o numero é positivo" + ParImpar;
             }
-            
+
         }//pegar um numero dizer se é negativo ou positivo  e par ou impar
 
 
+        //exercicio 4
+        public int ContarInteiros()
+
+        {
 
 
-        //mod %
-        //so pode tirar raiza de um numero de cada vez
-        //guarda o dado como texto e depois mostra de uma vexz na tela ja que nao da pra colocar 2 return de uma vez e tem que transformar em numero apes isso criando um metodo para cada return
+
+
+
+        }
+        //exercicio 5
+
+        public string TabuadaN(int num1, int num2)
+        {
+
+            string resultado = "";
+            for (int i = 0; i <= ; i++)
+            {
+                resultado += "\n" + num1 + " * " + i + " = " + (num2 * i);
+
+            }//fim do for
+
+            return resultado;
+
+        }//fim do metodo
+
+        //exercicio 9
+
+        public string lerNumeros (int num)
+        {
+            string contar = 0;
+            int i = 0;
+            num = 0;
+            do
+            {
+                contar = i++
+                    num = i + i
+
+            } while (num == 0);
+            return contar;
+        }//fim do metodo
+
+        //exercicio 10
+
+        public string MediaUsuarios (int med)
+        {
+            int i = 0;
+            string par = "";
+            double impar = 0;
+            do
+            {
+                par = i + i++;
+                switch (par)
+                {
+                    case 1:
+                        par += "num";
+                        break;
+                    case 11:
+                        impar += "B";
+                        break;
+                    case 12:
+                        hexadecimal += "C";
+                        break;
+
+                }//fim do switch
+                dec = dec / 16;
+            } while (dec != 0);
+            return new string(hexadecimal.Reverse().ToArray());
+        }//fim do converter
+
+
+
     }//fim da classe
+
+
+    // exercicio 12
+
+    public int VinteInteiros ()
+    {
+        int i = 0;
+        int num = 0;
+        do (num & 2)
+        {
+            
+        } while (i==20);
+
+        return i;
+
+        do
+        {
+
+        }while(i++ > 0);
+
+        return;
+    }
+
+
+    //exercicio 16
+
+       public int Eleitores()
+       {
+        string nulos = "";
+        string brancos = "";
+        string validos = "";
+        int todos = 0;
+
+        for (todos = nulos + brancos + validos) ;
+
+        {
+            todos += nulos;
+        }//fim do for
+        return todos;
+
+       }
+ 
+
+     //mod %
+     //so pode tirar raiza de um numero de cada vez
+     //guarda o dado como texto e depois mostra de uma vexz na tela ja que nao da pra colocar 2 return de uma vez e tem que transformar em numero apes isso criando um metodo para cada return
+
     //metodo construtor cria um objeto na memoria
     //instanciar e adicionar valores iniciais
     //transformar as variaveis em private

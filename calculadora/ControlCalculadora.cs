@@ -46,6 +46,13 @@ namespace calculadora
                               "\n13. Binario para hexadecimal" +
                               "\n14. Dobro e Triplo" +
                               "\n16. Positivo ou negativo e par ou impar" +
+                              "\n17. Contar Numeros" +
+                              "\n18. Ler Numeros" +
+                              "\n19. Media Alunos" +
+                              "\n20. Tabuada n" +
+                              "\n21. Eleitores" +
+                              "\n22. Dobro e Triplo" +
+                              "\n23. Dobro e Triplo" +
                               "\n\nEscolha uma das opções acima: ");
 
             int opcao = Convert.ToInt32(Console.ReadLine());
